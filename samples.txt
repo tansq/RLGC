@@ -1,0 +1,14 @@
+./samples/008009.png
+./samples/008083.png
+./samples/006988.png
+./samples/008354.png
+./samples/008176.png
+./samples/006044.png
+./samples/007688.png
+./samples/008084.png
+./samples/000807.png
+./samples/008096.png
+./samples/007949.png
+./samples/008411.png
+./samples/008402.png
+./samples/008484.png

@@ -1,14 +1,33 @@
 # RLGC
 
-Coming soon...
+ This program is stable under Python=3.7!
 
-The corresponding paper is under review. We will push the codes to
-this github repository once our paper is fortunately accepted.
+ We recommend that using conda before installing all the requirements. The details of our local conda environment are in:
 
-**To respected reviewers:**
+ - environment.yaml
 
-**The codes have been uploaded to manuscript central as supporting
-materials.** Feel free to contact us by sending a mail to the
-correspondence author(can be anonymous) if you meet with any problem
-when running the codes.
+ If your local dependencies are the same as us, then you can run this command to setup your environment:
 
+ - conda env create -f environment.yaml
+
+ If not, you can first create a python3.7 environment and running this command:
+
+ - pip install -r requirement.txt
+
+
+
+
+ Directories and files included in the implementation:
+
+ 'models' - The well-trained RLGC models. 
+
+ 'samples' - 14 samples images from our testing set, which can be used to run a sample test of RLGC with its well-trained models.
+ 
+ 'iid_early_stop' - The folder to save the original and attacked inpainting images as well as their corresponding predicted masks.
+
+
+ The commands for training and testing are:
+ - Training:
+ - CUDA_VISIBLE_DEVICES=0,1 python Train_torch.py
+ - Testing:
+ - CUDA_VISIBLE_DEVICES=0,1 python Tst.py
